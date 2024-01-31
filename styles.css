@@ -369,8 +369,10 @@ footer p {
     #playlists section {
         margin: 10px;
         column-span: 100%;
-    
+        width:350px;
+
     }
+   
     #curated .scroll {
         grid-template-columns: 300px;
         overflow-x: hidden;
@@ -383,5 +385,10 @@ footer p {
         padding: 5px;
         height: 450px;
         width: 400px;
+    }
+    #curated section {
+        margin: 10px;
+        column-span: 100%;
+        width:350px;   
     }
 }
