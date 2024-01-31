@@ -93,6 +93,7 @@ nav {
     background-color:#030ABC;
     justify-content: left;
     
+    
 }
 ul a {
     text-decoration: none;
@@ -240,7 +241,10 @@ main a {
     display: flex;
     width:fit-content;
     border-radius: 5px;
+}
 
+main a:hover {
+    background-color: #020659;
 }
 
 p, dd, dl {
