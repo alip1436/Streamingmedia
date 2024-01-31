@@ -345,5 +345,9 @@ footer p {
     label span, input {
         display: none;
     }
+    main a {
+        margin-left: auto;
+        margin-right: 25px;
+    }
     
 }
