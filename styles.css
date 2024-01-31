@@ -354,7 +354,7 @@ footer p {
         margin-right: 25px;
     }
     #playlists .scroll {
-        grid-template-columns: 300px;
+        grid-template-columns: 400px;
         overflow-x: hidden;
         overflow-y: auto;
     }
@@ -374,7 +374,7 @@ footer p {
     }
    
     #curated .scroll {
-        grid-template-columns: 300px;
+        grid-template-columns: 400px;
         overflow-x: hidden;
         overflow-y: auto;
     
