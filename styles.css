@@ -68,7 +68,17 @@ header, footer {
     width: 100%;
     
 }
+.extra {
+    text-transform: small-caps;
+    position: absolute;
+    z-index: 1;
+    font-size: 1.75em;
+    
+}
+.more {
+    text-transform: uppercase;
 
+}
 header {
     padding-bottom: 25px;
     text-justify: left;
@@ -86,7 +96,9 @@ header p{
     padding-left: 25px;
 }
 nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1 fr;
     height: 75px;
     align-items: center;
     color: #ffffff;
@@ -101,17 +113,9 @@ ul a {
 
 }
 
-.extra {
-    text-transform: small-caps;
-    position: absolute;
-    z-index: 1;
-    font-size: 1.75em;
-    
-}
 
-.more {
-    text-transform: uppercase;
-}
+
+
 
 ul {
     overflow: hidden;
@@ -277,8 +281,9 @@ dt {
 audio {
     position: absolute;
     top: 150px;
-    bottom: 50 px;
-    left: 25px;
+    bottom: 55 px;
+    left: 10px;
+    
 }
 audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
@@ -289,8 +294,8 @@ audio::-webkit-media-controls-play-button {
     border-radius: 50%;
 }
 audio::-webkit-media-controls-enclosure {
-    background-color: #ffffff;
-    border-radius: 50%;
+    background-color: rgba(255,255,255,.75);
+    
 }
 
 #trending ::-webkit-scrollbar {
@@ -344,7 +349,11 @@ footer p {
         top: 0;
         display: grid;
         grid-template-columns: repeat(5, 250px);
+        grid-template-rows: repeat(5, 1fr);
         grid-gap: 10px;
+    }
+    .extra {
+        position: relative;
     }
     label span, input {
         display: none;
@@ -353,12 +362,14 @@ footer p {
         margin-left: auto;
         margin-right: 25px;
     }
-    #playlists .scroll {
-        grid-template-columns: 400px;
+    #playlists .scroll, #curated .scroll {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(5, 1fr);
         overflow-x: hidden;
         overflow-y: auto;
+        height: 500px;
     }
-    
     #playlists div {
         
         top: 251px;
@@ -373,12 +384,6 @@ footer p {
 
     }
    
-    #curated .scroll {
-        grid-template-columns: 400px;
-        overflow-x: hidden;
-        overflow-y: auto;
-    
-    }
     #curated div {
         
         top: 251px;
@@ -391,4 +396,5 @@ footer p {
         column-span: 100%;
         width:350px;   
     }
-}
+
+}   
